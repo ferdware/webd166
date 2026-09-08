@@ -1,4 +1,9 @@
 <?php
+// Ferdinand Eugenio
+// 09/07/2026
+// Mesa College WEBD-166
+// Chapter 2 - Variables
+
 // Store the Googleplex information in variables.
 $heading = "Googleplex";
 $street = "1600 Amphitheatre Parkway";
