@@ -17,12 +17,12 @@ $heard = $_POST['heard'];
 $comments = $_POST['comments'];
 ?>
 <!DOCTYPE html>
-<!-- Ferdinand -->
+<!-- Ferdinand Eugenio-->
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
-    <title>Form Results Ferdinand</title>
+    <title>Form Results - Ferdinand Eugenio</title>
     <link rel="stylesheet" href="form.css">
 </head>
 
