@@ -17,7 +17,7 @@ $heard = $_POST['heard'];
 $comments = $_POST['comments'];
 ?>
 <!DOCTYPE html>
-<!-- Ferdinand Eugenio-->
+<!-- Ferdinand Eugenio -->
 <html lang="en">
 
 <head>
