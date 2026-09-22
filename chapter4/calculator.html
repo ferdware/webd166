@@ -1,0 +1,79 @@
+<!doctype html>
+<!-- Ferdinand Eugenio -->
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Calculate Your MPG and Cost of Trip</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 20px;
+        }
+
+        /* Each row holds one label and one input side by side. */
+        .form-row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+
+        /* Labels sit to the left of the fields and line up on the right. */
+        .form-row label {
+            width: 140px;
+            margin-right: 10px;
+            text-align: right;
+            font-size: 14px;
+        }
+
+        .form-row input {
+            width: 120px;
+            padding: 3px;
+            font-size: 14px;
+        }
+
+        /* The two buttons sit below the fields. */
+        .form-buttons input {
+            margin-bottom: 15px;
+            padding: 5px 10px;
+            font-size: 14px;
+            background-color: #ffffff;
+            border: 2px solid #333333;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Calculate Your MPG and Cost of Trip</h1>
+
+    <h2>Enter the information below to see if you are getting good mileage!</h2>
+
+    <form action="calculator.php" method="post">
+
+        <div class="form-row">
+            <label for="miles_driven">Miles Driven:</label>
+            <input type="number" name="miles_driven" id="miles_driven"
+                   step="any" min="0" required>
+        </div>
+
+        <div class="form-row">
+            <label for="gallons_used">Gallons of Gas Used:</label>
+            <input type="number" name="gallons_used" id="gallons_used"
+                   step="any" min="0.01" required>
+        </div>
+
+        <div class="form-row">
+            <label for="price_per_gallon">Price per gallon:</label>
+            <input type="number" name="price_per_gallon" id="price_per_gallon"
+                   step="any" min="0" required>
+        </div>
+
+        <div class="form-buttons">
+            <input type="submit" value="Calculate the MPG and Cost of the Trip">
+            <br>
+            <input type="reset" value="Clear Form">
+        </div>
+
+    </form>
+
+</body>
+</html>
