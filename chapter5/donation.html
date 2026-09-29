@@ -76,22 +76,6 @@
         </form>
 
     </section>
-
-    <script>
-        // Show only my own error message when a name does not match the pattern.
-        const nameFields = [document.getElementById('first_name'), document.getElementById('last_name')];
-
-        for (const field of nameFields) {
-            field.addEventListener('input', function () {
-                // Clear the old message first so the browser can check the value again.
-                field.setCustomValidity('');
-
-                if (field.validity.patternMismatch) {
-                    field.setCustomValidity(field.title);
-                }
-            });
-        }
-    </script>
 </body>
 
 </html>

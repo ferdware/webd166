@@ -6,7 +6,7 @@ error_reporting(E_ALL);
 // Init message variable.
 $msg = '';
 
-// sanitize values from form.
+// Get and trim values from the form.
 $fname = trim($_POST['first_name'] ?? '');
 $lname = trim($_POST['last_name'] ?? '');
 $email = trim($_POST['email'] ?? '');
@@ -20,7 +20,7 @@ $safe_fname = htmlspecialchars($fname, ENT_QUOTES, 'UTF-8');
 $safe_lname = htmlspecialchars($lname, ENT_QUOTES, 'UTF-8');
 $safe_email = htmlspecialchars($email, ENT_QUOTES, 'UTF-8');
 
-// Format the donation amount two decimal places.
+// Format the donation amount to two decimal places.
 $donation = $_POST['donation'] ?? 0;
 $donation = number_format((float) $donation, 2);
 
